@@ -11,7 +11,7 @@ if("dibujar" in punto){
     punto.dibujar();
 };
 
-// console.log(Object.keys(punto));
+// Se usaba antes Object.keys para visualizar las propiedades de un objeto
 for (let llave of Object.keys(punto)){
     console.log(llave, punto[llave]);
 };
@@ -20,6 +20,7 @@ for (let entry of Object.entries(punto)){
     console.log(entry);
 };
 
+// Ahora esta es la forma más sencilla de recorrer las propiedades de un objeto
 for (let llave in punto){
     console.log(llave, punto[llave]);
 };
